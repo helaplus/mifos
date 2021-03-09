@@ -6,37 +6,6 @@
 $ docker-compose up
 ```
 
-# Or build the images
-
-1. Build the MIFOS X image
-
-```bash
-$ docker build -t com.mx.fintecheando.tomcat.mifosx.19.07 .
-```
-
-2. Build the MySQL image 
-
-```bash
-$ docker build -t com.mx.fintecheando.mysql.mifosx.19.07 .
-```
-
-3. Build the SMS Server image
-
-```bash
-$ docker build -t com.mx.fintecheando.activemq.mifosx.19.07 .
-```
-
-4. Run the Docker images using Compose
-
-```bash
-$ docker-compose -f mifos-stack-DEV.yml up
-```
-
-5. Verify the running containers
-
-```bash
-$ docker ps | grep mifosx.19.07
-```
 
 6. Login to Mifos using the Web UI with these credentials:
 
@@ -46,7 +15,7 @@ password: password
 https://localhost:8443/community-app/#/ (secure web access, but this is a self signed certificate and you will have a warning in your web explorer, just ignore it and continue)
 
 
-7. As note if you have any issue with the volumes and entry points remove the volumes (be careful, with this we are removing all of them, because it is running in our local DEV, don't do this in Production)
+3. As note if you have any issue with the volumes and entry points remove the volumes (be careful, with this we are removing all of them, because it is running in our local DEV, don't do this in Production)
 ```bash
 $ docker stop $(docker ps -a -q)
 $ docker rm $(docker ps -a -q)
