@@ -1,13 +1,13 @@
-# Mifos X 19.07 - Docker - FinTECHeando
+# Mifos X 17 - Docker
 
-1. Just run Docker compose to get Mifos X 19.07 up and running.
+1. Just run Docker compose to get Mifos X 17 up and running.
 
 ```bash
 $ docker-compose up
 ```
 
 
-6. Login to Mifos using the Web UI with these credentials:
+2. Login to Mifos using the Web UI with these credentials:
 
 username: mifos
 password: password
