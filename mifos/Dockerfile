@@ -6,7 +6,7 @@ COPY ./server.xml /usr/local/tomcat/conf/server.xml
 
 COPY ./fineract-provider.war /usr/local/tomcat/webapps/fineract-provider.war
 
-COPY ./community-app/ /usr/local/tomcat/webapps/community-app
+COPY ./ROOT/ /usr/local/tomcat/webapps/ROOT
 
 COPY ./api-docs /usr/local/tomcat/webapps/api-docs
 
