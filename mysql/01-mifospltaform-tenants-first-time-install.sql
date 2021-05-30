@@ -92,7 +92,7 @@ CREATE TABLE `tenants` (
   `schema_server` varchar(100) NOT NULL DEFAULT 'mifos-db-server',
   `schema_server_port` varchar(10) NOT NULL DEFAULT '3306',
   `schema_username` varchar(100) NOT NULL DEFAULT 'root',
-  `schema_password` varchar(100) NOT NULL DEFAULT 'mysql',
+  `schema_password` varchar(100) NOT NULL DEFAULT 'm1f05my5ql',
   `auto_update` tinyint(1) NOT NULL DEFAULT '1',
   `pool_initial_size` int(5) DEFAULT 5,
   `pool_validation_interval` int(11) DEFAULT 30000,
@@ -118,7 +118,7 @@ CREATE TABLE `tenants` (
 LOCK TABLES `tenants` WRITE;
 /*!40000 ALTER TABLE `tenants` DISABLE KEYS */;
 INSERT INTO `tenants` VALUES 
-(1,'default','default','mifostenant-default','Asia/Kolkata',NULL,NULL,NULL,NULL,'mifos-db-server','3306','root','mysql',1,5,30000,1,60,1,50,1,40,20,10,60,34000,60000);
+(1,'default','default','mifostenant-default','Asia/Kolkata',NULL,NULL,NULL,NULL,'mifos-db-server','3306','root','m1f05my5ql',1,5,30000,1,60,1,50,1,40,20,10,60,34000,60000);
 /*!40000 ALTER TABLE `tenants` ENABLE KEYS */;
 UNLOCK TABLES;
 

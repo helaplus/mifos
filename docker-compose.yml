@@ -28,9 +28,9 @@ services:
     ports:
       - '3307:3306'
     environment:
-      MYSQL_ROOT_PASSWORD: mysql
+      MYSQL_ROOT_PASSWORD: m1f05my5ql
     healthcheck:
-      test:  mysqladmin --user=root --password=mysql ping -h localhost
+      test:  mysqladmin --user=root --password=m1f05my5ql ping -h localhost
       interval: 5s
       retries: 20
     volumes:
