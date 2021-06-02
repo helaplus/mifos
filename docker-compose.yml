@@ -48,10 +48,10 @@ services:
     expose:
       - "80"
     environment:
-      - VIRTUAL_HOST=mifos.bgs.co.ke
+      - VIRTUAL_HOST=${HOST_URL}
       - VIRTUAL_PORT=80
-      - LETSENCRYPT_HOST=mifos.bgs.co.ke
-      - LETSENCRYPT_EMAIL=info@bgs.co.ke
+      - LETSENCRYPT_HOST=${HOST_URL}
+      - LETSENCRYPT_EMAIL=${HOST_SSL_EMAIL}
     volumes:
       - ./nginx/conf.d/app.conf:/etc/nginx/conf.d/default.conf
     networks:
