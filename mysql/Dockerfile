@@ -1,4 +1,4 @@
-FROM mysql:5.7
+FROM mysql:5.5
 
 RUN apt-get update \
 	&& apt-get install -y wget unzip \
@@ -10,6 +10,6 @@ ADD ./00-create-databases.sql /docker-entrypoint-initdb.d/00-create-databases.sq
 
 ADD ./01-mifospltaform-tenants-first-time-install.sql /docker-entrypoint-initdb.d/01-mifospltaform-tenants-first-time-install.sql
 
-#ADD ./02-load_sample_data.sql /docker-entrypoint-initdb.d/02-load_sample_data.sql
+ADD ./02-load_sample_data.sql /docker-entrypoint-initdb.d/02-load_sample_data.sql
 
 VOLUME /docker-entrypoint-initdb.d
