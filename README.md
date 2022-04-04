@@ -22,10 +22,10 @@ Change PORT, DOMAIN and EMAIL
 Specify your IP in Nginx.conf
 
 ```bash
-$ nano nginx/conf.d/app.conf
-Change ${your_ip}] to your IP
+$ nano nginx/conf.d/app.conf 
+Change $https://{your_ip}] to your IP
 ```
-
+ 
 1. Just run Docker compose to get Mifos X 17 up and running. 
 
 ```bash
