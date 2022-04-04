@@ -1,6 +1,22 @@
 # Mifos X 17 - Docker
+Git pull the repo
 
-1. Just run Docker compose to get Mifos X 17 up and running.
+```bash
+$ git pull https://github.com/helaplus/mifos
+```
+Create a .env file by copying .env.example
+```bash
+$ cp .env.example .env
+```
+
+Specify the domain, host and email
+
+```bash
+$ nano .env
+Change PORT, DOMAIN and EMAIL
+```
+
+1. Just run Docker compose to get Mifos X 17 up and running. 
 
 ```bash
 $ docker-compose up
